@@ -1,0 +1,11 @@
+{
+  "name": "etdsolutions/requirejs",
+  "description": "Shim repository for CodeMirror",
+  "homepage": "http://codemirror.net/",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marijn Haverbeke"
+    }
+  ]
+}
