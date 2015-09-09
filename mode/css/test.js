@@ -18,6 +18,12 @@
   MT("atMediaMaxWidthNested",
      "[def @media] [attribute screen] [keyword and] ([property max-width]: [number 25px]) { [tag foo] { } }");
 
+  MT("atMediaFeatureValueKeyword",
+     "[def @media] ([property orientation]: [keyword landscape]) { }");
+
+  MT("atMediaUnknownFeatureValueKeyword",
+     "[def @media] ([property orientation]: [error upsidedown]) { }");
+
   MT("tagSelector",
      "[tag foo] { }");
 
@@ -75,13 +81,6 @@
 
   MT("tagTwoPropertiesURL",
      "[tag foo] { [property background]: [atom url]([string //example.com/foo.png]); [property padding]: [number 0]; }");
-
-  MT("commentSGML",
-     "[comment <!--comment-->]");
-
-  MT("commentSGML2",
-     "[comment <!--comment]",
-     "[comment -->] [tag div] {}");
 
   MT("indent_tagSelector",
      "[tag strong], [tag em] {",
